@@ -29,7 +29,7 @@ div.grid-cover {
 }
 
 .contenedor-galeria {
-    width: 657px;
+    width: 90%;
     height: 502px;
     position: absolute;
     left: 50%;
@@ -42,7 +42,7 @@ div.grid-cover {
 }
 
 .contenedor-galeria-center {
-    width: 657px;
+    width:90%;
     height: 502px;
     position: absolute;
     left: 50%;
@@ -55,7 +55,7 @@ div.grid-cover {
 }
 
 .contenedor-galeria-down {
-    width: 657px;
+    width: 90%;
     height: 502px;
     position: absolute;
     left: 50%;
@@ -68,7 +68,7 @@ div.grid-cover {
 }
 
 .contenedor-galeria-sub {
-    width: 657px;
+    width: 90%;
     height: 502px;
     position: absolute;
     left: 50%;
