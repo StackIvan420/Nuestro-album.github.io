@@ -4,12 +4,24 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 119, 1) 47%, #df33df);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
+    margin: 2px;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 0;
+    text-align: center;
+}
+
+.icon {
+    transform: translateY(-90%);
 }
 
 div.grid-cover {
@@ -20,6 +32,7 @@ div.grid-cover {
     grid-template-rows: 50% 50%;
     position: fixed;
     z-index: -1000;
+    transform: translateY(-110em)
 }
 
 .grid-up,
@@ -29,244 +42,210 @@ div.grid-cover {
 }
 
 .contenedor-galeria {
-    width: 657px;
-    height: 502px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 17.5rem 17.5rem;
+    gap: 0.3em;
+    width: 100%;
+    height: 75vh;
+    top: 6rem;
 }
 
 .contenedor-galeria-center {
-    width: 657px;
-    height: 502px;
-    position: absolute;
-    left: 50%;
-    top: 121.8%;
-    transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 17.5rem 17.5rem;
+    gap: 0.3em;
+    width: 100%;
+    height: 75vh;
 }
 
 .contenedor-galeria-down {
-    width: 657px;
-    height: 502px;
-    position: absolute;
-    left: 50%;
-    top: 193%;
-    transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 17.5rem 17.5rem;
+    gap: 0.3em;
+    width: 100%;
+    height: 75vh;
 }
 
 .contenedor-galeria-sub {
-    width: 657px;
-    height: 502px;
-    position: absolute;
-    left: 50%;
-    top: 270%;
-    padding-bottom: 5rem;
-    transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 17.5rem 17.5rem;
+    gap: 0.3em;
+    width: 100%;
+    height: 75vh;
+}
+
+@media (min-width:600px) {
+    section.content-album {
+        transform: translateX(16%);
+        width: 75%;
+    }
+    div.width {
+        gap: 1em;
+        padding-top: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    section.content-album {
+        width: 70%;
+    }
 }
 
 .img1 {
-    float: left;
-    width: 206px;
-    height: 298px;
+    width: 100%;
+    height: 14rem;
     background-image: url(../img/img1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img2 {
-    float: right;
-    margin-right: 225px;
-    width: 214px;
-    height: 226px;
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img3 {
-    float: right;
-    margin-right: 0px;
-    margin-top: -226px;
-    width: 214px;
-    height: 329px;
+    width: 100%;
+    height: 14rem;
     background-image: url(../img/img3.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .img4 {
-    float: left;
-    margin-right: 32px;
-    margin-top: 12px;
-    width: 206px;
-    height: 192px;
+    transform: translateY(-3.5rem);
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img4.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img5 {
-    float: right;
-    margin-right: 225px;
-    margin-top: -264px;
-    width: 214px;
-    height: 264px;
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 14rem;
     background-image: url(../img/img5.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img6 {
-    float: right;
-    margin-right: 0px;
-    margin-top: -161px;
-    width: 214px;
-    height: 161px;
+    transform: translateY(-3.5rem);
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img6.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img7 {
-    float: left;
-    width: 206px;
-    height: 298px;
+    width: 100%;
+    height: 14rem;
     background-image: url(../img/img7.jpg);
-    background-size: 150% 120%;
-    background-position: center;
     background-size: cover;
+    background-position: center;
 }
 
 .img8 {
-    float: right;
-    margin-right: 225px;
-    width: 214px;
-    height: 226px;
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img8.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img9 {
-    float: right;
-    margin-right: 0px;
-    margin-top: -226px;
-    width: 214px;
-    height: 329px;
+    width: 100%;
+    height: 14rem;
     background-image: url(../img/img9.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .img10 {
-    float: left;
-    margin-right: 32px;
-    margin-top: 12px;
-    width: 206px;
-    height: 192px;
-    background-image: url(../img/img10.jpg);
+    transform: translateY(-1.8rem);
+    width: 100%;
+    height: 21rem;
     background-size: cover;
     background-position: center;
 }
 
 .img11 {
-    float: right;
-    margin-right: 225px;
-    margin-top: -264px;
-    width: 214px;
-    height: 264px;
+    transform: translateY(3.5rem);
+    width: 100%;
+    height: 14rem;
     background-image: url(../img/img11.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img12 {
-    float: right;
-    margin-right: 0px;
-    margin-top: -161px;
-    width: 214px;
-    height: 161px;
+    transform: translateY(-3.5rem);
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img12.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img13 {
-    float: left;
-    width: 206px;
-    height: 298px;
-    background-image: url(../img/img13.jpg);
-    background-size: 150% 120%;
-    background-position: center;
+    width: 100%;
+    height: 14rem;
+    background-image: url(../img/img13.jpeg);
     background-size: cover;
+    background-position: center;
 }
 
 .img14 {
-    float: right;
-    margin-right: 225px;
-    width: 214px;
-    height: 226px;
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img14.jpg);
-    background-size: 170% 100%;
+    background-size: cover;
     background-position: center;
 }
 
 .img15 {
-    float: right;
-    margin-right: 0px;
-    margin-top: -226px;
-    width: 214px;
-    height: 329px;
-    background-image: url(../img/img15.jpg);
+    width: 100%;
+    height: 14rem;
+    background-image: url(../img/img15.jpeg);
     background-position: center;
+    background-size: cover;
 }
 
 .img16 {
-    float: left;
-    margin-right: 32px;
-    margin-top: 12px;
-    width: 206px;
-    height: 192px;
+    transform: translateY(-3.5rem);
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img16.jpg);
-    background-size: 200% 100%;
+    background-size: cover;
     background-position: center;
 }
 
 .img17 {
-    float: right;
-    margin-right: 225px;
-    margin-top: -264px;
-    width: 214px;
-    height: 264px;
+    margin-top: 1.8rem;
+    width: 100%;
+    height: 14rem;
     background-image: url(../img/img17.jpg);
-    background-size: 200% 100%;
+    background-size: cover;
     background-position: center;
 }
 
 .img18 {
-    float: right;
-    margin-right: 0px;
-    margin-top: -161px;
-    width: 214px;
-    height: 161px;
+    transform: translateY(-3.5rem);
+    width: 100%;
+    height: 21rem;
     background-image: url(../img/img18.jpg);
-    background-size: 120% 130%;
+    background-size: cover;
     background-position: center;
 }
