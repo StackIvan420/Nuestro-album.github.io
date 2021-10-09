@@ -8,76 +8,91 @@
     <title>Un Album</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
+    <script src="https://unpkg.com/scrollreveal">
+    </script>
+    <script>
+        ScrollReveal({
+            reset: true
+        });
+    </script>
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"-->
 
 </head>
 
 <body>
+    <section class="nav">
+        <h1 class="titulo">Nuestro Album</h1>
+    </section>
+    <section class="content-album">
+        <div class="contenedor-galeria  width">
+            <a class="sr" href="img/img1.jpg" data-lightbox="Historia" data-title="Nuestro Album" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
+                <div class="img1"></div>
+            </a>
+            <a class="sr" href="img/img2.jpg" data-lightbox="Historia" data-title="Nuestro Album" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
+                <div class="img2"></div>
+            </a>
+            <a class="sr" href="img/img3.jpg" data-lightbox="Historia" data-title="Nuestro Album" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
+                <div class="img3"></div>
+            </a>
+            <a class="sr" href="img/img4.jpg" data-lightbox="Historia" data-title="Nuestro Album" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
+                <div class="img4"></div>
+            </a>
+            <a class="sr" href="imgimg5.jpg" data-lightbox="Historia" data-title="Nuestro Album" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
+                <div class="img5"></div>
+            </a>
+            <a class="sr" href="img/img6.jpg" data-lightbox="Historia" data-title="Nuestro Album" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
+                <div class="img6"></div>
+            </a>
+        </div>
+        <div class="contenedor-galeria-center width">
+            <a class="sr" href="img/img7.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img7"></div>
+            </a>
+            <a class="sr" href="img/img8.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img8"></div>
+            </a>
+            <a class="sr" href="img/img9.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img9"></div>
+            </a>
+            <a class="sr" href="img/img10.mp4" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img10" muted loop>
+                    <video src="../img/img10.mp4" frameborder="0" class="img10" muted loop autoplay></video>
+                </div>
+            </a>
+            <a class="sr" href="img/img11.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img11"></div>
+            </a>
 
-    <div class="contenedor-galeria">
-        <a href="img/img1.jpg" data-lightbox="Historia" data-title="Album Modena" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
-            <div class="img1"></div>
-        </a>
-        <a href="img/img2.jpg" data-lightbox="Nissan" data-title="Album Modena" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
-            <div class="img2"></div>
-        </a>
-        <a href="img/img3.jpg" data-lightbox="GT-R" data-title="Album Modena" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
-            <div class="img3"></div>
-        </a>
-        <a href="img/img4.jpg" data-lightbox="Autos" data-title="Album Modena" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
-            <div class="img4"></div>
-        </a>
-        <a href="imgimg5.jpg" data-lightbox="Carreras" data-title="Album Modena" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
-            <div class="img5"></div>
-        </a>
-        <a href="img/img6.jpg" data-lightbox="Nissan GT-R" data-title="Album Modena" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Hacé click!">
-            <div class="img6"></div>
-        </a>
-    </div>
-    <div class="contenedor-galeria-center">
-        <a href="img/img7.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img7"></div>
-        </a>
-        <a href="img/img8.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img8"></div>
-        </a>
-        <a href="img/img9.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img9"></div>
-        </a>
-        <a href="img/img10.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img10"></div>
-        </a>
-        <a href="imgimg11.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img11"></div>
-        </a>
-        <a href="galeria/img12.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img12"></div>
-        </a>
-    </div>
-    <div class="contenedor-galeria-down">
-        <a href="img/img13.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img13"></div>
-        </a>
-        <a href="img/img14.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img8"></div>
-        </a>
-        <a href="img/img15.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img15"></div>
-        </a>
-        <a href="img/img16.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img16"></div>
-        </a>
-        <a href="img/img17.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img17"></div>
-        </a>
-        <a href="img/img18.jpg" data-lightbox="Nissan GT-R" data-title="Album Cursi">
-            <div class="img18"></div>
-        </a>
-    </div>
+            <a class="sr" href="galeria/img12.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img12"></div>
+            </a>
+        </div>
+        <div class="contenedor-galeria-down width">
+            <a class="sr" href="img/img13.jpeg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img13"></div>
+            </a>
+            <a class="sr" href="img/img14.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img8"></div>
+            </a>
+            <a class="sr" href="img/img15.jpeg" ddata-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img15"></div>
+            </a>
+            <a class="sr" href="img/img16.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img16"></div>
+            </a>
+            <a class="sr" href="img/img17.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img17"></div>
+            </a>
+            <a class="sr" href="img/img18.jpg" data-lightbox="Historia" data-title="Nuestro Album">
+                <div class="img18 "></div>
+            </a>
+        </div>
+    </section>
+    <!--fondo-->
     <div class="grid-cover">
         <div class="grid-up">
             <div class="grid">
-                <svg xmlns="http://www.w3.org/2000/svg" transform="translate(30) rotate(-45 50 50)" fill="#66FF66" class="bi bi-emoji-smile smile" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" transform="translate(40) rotate(-45 50 50)" fill="#66FF66" class="bi bi-emoji-smile smile" viewBox="0 0 16 16">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                 <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
                 <rect x="50" y="50"  style="stroke:#000; fill: #0086B2" fill-opacity=0.2 stroke-opacity=0.2></rect>
@@ -87,7 +102,7 @@
 
             </div>
             <div class="grid">
-                <svg xmlns="http://www.w3.org/2000/svg" transform="translate(-30)" width="75" height="75" fill="#fffd01" class="bi bi-heart" viewBox="0 0 16 16">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#fffd01" class="bi bi-heart" viewBox="0 0 16 16">
                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                   </svg>
             </div>
@@ -229,9 +244,11 @@
         </div>
     </div>
 
+    <script src="js/ScrollReveal.js"></script>
     <script src="js/lightbox-plus-jquery.min.js">
     </script>
-    <script src="js/tooltip.js"></script>
+    <script src="js/tooltip.js">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
